@@ -6,21 +6,13 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Hari ini adalah hari spesial... karena orang terspesial di hidup aku lahir hari ini 💗
-
-Terima kasih udah hadir di hidup aku bontott akuu 😍
-
-Semoga ulang tahun kali ini bikin kamu tambah bahagia, sehat selalu, sukses buat kedepan nya yuhuuu 🫨
-
-Dan semoga setiap langkah kmu penuh keberkahan, dan setiap impianmu satu per satu menjadi kenyataan. Kamu punya hati yang tulus, senyum yang menenangkan, dan jiwa yang baik, Dunia butuh lebih banyak orang sepertimu. Jadi jangan pernah ngerasa sendiri apalagi nyerah 🫂
-
-Aku pengen kamu tau kalau aku percaya sama kamu sepenuhnya. Kamu kuat, kamu hebat, dan kamu pantas dapetin yang terbaik, jangan pernah ngeraguin dirimu sendiri, kamu itu cahaya dalam hidup banyak orang, termasuk hidup akuu sendiri 🥺
-
-kalau suatu hari kamu ngerasa ragu atau takut, ingat doa aku ini ”Semoga kamu selalu dikelilingi orang-orang baik, rezeki yang cukup, dan cinta yang tulus dari semua arah.Termasuk dariku donaa 💝”
-
-Jangan lupa tetep jadi kamu yang manis, jadi jangan lupa senyum di hari ulang tahun kamuu okee 😋
-
-dari eonni kesayangan kamuu <3
+Happy 23rd, My Favorite Person💗
+Semoga hal-hal yang pernah membuatmu runtuh berubah menjadi alasan terbesarmu untuk tumbuh.
+Semoga dunia selalu menjagamu, ke mana pun langkahmu pergi.
+Semoga hari-harimu dipenuhi cinta yang tak pernah mengenal batas.
+Dan semoga semua yang kamu usahakan
+pelan-pelan menjadi nyata, satu-persatu.
+I'm proud of you, always✨
   `;
 
   return (
@@ -90,7 +82,7 @@ dari eonni kesayangan kamuu <3
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Bontot 💖
+                  Rezal  💖
                 </div>
                 <div className="text-white text-lg text-center mt-4">
                   Hanya kamu di hatiku, sayang 🥹
