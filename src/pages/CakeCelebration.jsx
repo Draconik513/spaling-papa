@@ -145,7 +145,7 @@ const CakeCelebration = () => {
       analyserRef.current.getByteFrequencyData(dataArray);
       const volume = dataArray.reduce((acc, val) => acc + val, 0) / dataArray.length;
 
-      if (volume > 27) {
+      if (volume > 10) {
         if (flameRef.current && !flameRef.current.classList.contains('blowing')) {
           flameRef.current.classList.add('blowing');
           emitParticles();
