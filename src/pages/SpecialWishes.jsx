@@ -9,11 +9,11 @@ const SpecialWishes = ({ isIOS }) => {
 
 Sayangku 💖, hari ini adalah momen yang paling indah karena hari ini papa lahir ke dunia 🎉. Mama ingin berdoa agar papa selalu dalam lindungan Allah 🙏, diberi kesehatan 💪, kekuatan 🛡️, dan kebahagiaan yang tiada akhir 🌈✨.
 
-Mama tahu hidup tidak selalu mudah 🌧️, tapi mama ingin papa tahu bahwa papa tidak sendiri 🤝. Mama akan selalu mendukung papa 💞, menyemangati papa 💫, dan menjadi pundakmu saat papa lelah 😔➡️💆‍♀️.
+Mama tahu hidup tidak selalu mudah 🌧️, tapi mama ingin papa tahu bahwa papa tidak sendiri 🤝. Mama akan selalu mendukung papa 💞, menyemangati papa 💫, dan menjadi pundak papa saat papa lelah 😔➡️💆‍♀️.
 
-Semoga setiap langkahmu penuh keberkahan 🕌, dan setiap impianmu satu per satu menjadi kenyataan 🌠. Papa punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa lembut luar dalam 🌹. Dunia butuh lebih banyak orang seperti papa 🌍❤️.
+Semoga setiap langkah papa penuh keberkahan 🕌, dan setiap impian papa satu per satu menjadi kenyataan 🌠. Papa punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa lembut luar dalam 🌹. Dunia butuh lebih banyak orang seperti papa 🌍❤️.
 
-Mama ingin papa tahu bahwa mama percaya padamu sepenuhnya 🙌. Papa kuat 💥, papa hebat 🦋, dan papa pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan dirimu sendiri 🙅‍♀️, karena papa adalah cahaya dalam hidup banyak orang 🌟, termasuk hidup mama 💘.
+Mama ingin papa tahu bahwa mama percaya pada papa sepenuhnya 🙌. Papa kuat 💥, papa hebat 🦋, dan papa pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan diri papa sendiri 🙅‍♀️, karena papa adalah cahaya dalam hidup banyak orang 🌟, termasuk hidup mama 💘.
 
 Jika suatu hari papa merasa ragu atau takut 😟, ingatlah doa mama ini: Semoga papa selalu dikelilingi orang-orang baik 👨‍👩‍👧‍👦, rezeki yang cukup 💰, dan cinta yang tulus dari semua arah 💗. Termasuk dari mama 🫶.
 
