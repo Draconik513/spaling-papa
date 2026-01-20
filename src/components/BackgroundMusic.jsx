@@ -15,7 +15,7 @@ const BackgroundMusic = () => {
           func,
           args,
         }),
-        "*"
+        "*",
       );
     };
 
@@ -48,7 +48,7 @@ const BackgroundMusic = () => {
           ref={iframeRef}
           width="1"
           height="1"
-          src="https://www.youtube.com/embed/gvunApwKIiY?autoplay=1&loop=1&playlist=gvunApwKIiY&enablejsapi=1&mute=0"
+          src="https://www.youtube.com/embed/3Xj-sk_jywE?autoplay=1&loop=1&playlist=3Xj-sk_jywE&enablejsapi=1&mute=0"
           title="Background Music"
           frameBorder="0"
           allow="autoplay; encrypted-media"
