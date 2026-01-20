@@ -41,7 +41,7 @@ const BirthdayCountdown = ({ isIOS }) => {
     e.preventDefault();
     if (replyMessage.trim()) {
       const replies = JSON.parse(
-        localStorage.getItem("birthdayReplies") || "[]"
+        localStorage.getItem("birthdayReplies") || "[]",
       );
       replies.push({
         message: replyMessage,
@@ -62,7 +62,7 @@ const BirthdayCountdown = ({ isIOS }) => {
         className="text-center max-w-2xl"
       >
         <h1 className="text-4xl md:text-5xl font-bold text-pink-600 mb-8">
-          The Birthday of <span className="text-purple-600">Endah</span>
+          The Birthday of <span className="text-purple-600">Papa</span>
         </h1>
 
         <div className="mb-8">
@@ -96,10 +96,10 @@ const BirthdayCountdown = ({ isIOS }) => {
                   {unit === "days"
                     ? "hari"
                     : unit === "hours"
-                    ? "jam"
-                    : unit === "minutes"
-                    ? "menit"
-                    : "detik"}
+                      ? "jam"
+                      : unit === "minutes"
+                        ? "menit"
+                        : "detik"}
                 </div>
               </motion.div>
             ))}
@@ -108,15 +108,16 @@ const BirthdayCountdown = ({ isIOS }) => {
 
         <div className="bg-white p-6 rounded-xl shadow-lg mb-8 border border-pink-100">
           <h3 className="text-xl font-semibold text-purple-600 mb-2">
-            📅  13 januari 2026
+            📅 03 Februari 2026
           </h3>
           <p className="text-pink-600">
-           Tanggal dimana senyumanmu akan menerangi hariku🥹
+            Tanggal dimana senyum papa akan menghiasi hari hari mama
           </p>
         </div>
 
         <p className="mt-6 text-lg text-pink-500 italic text-center">
-          "today and everyday, i'll always be ur #1 supporter, clap the loudest for u, and praying wholeheartedly for ur well-being."
+          "today and everyday, i'll always be ur #1 supporter, clap the loudest
+          for u, and praying wholeheartedly for ur well-being."
         </p>
       </motion.div>
 

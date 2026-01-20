@@ -129,7 +129,7 @@ const GiftWrapper = () => {
             className="mt-4 p-4 bg-white rounded-lg shadow-md max-w-md text-center"
           >
             <p className="text-pink-600">
-              Hadiah belum bisa dibuka sampai 13 januari 2026 !
+              Hadiah belum bisa dibuka sampai 03 Februari 2026 !
             </p>
             <p className="text-sm text-gray-500 mt-2">
               Tunggu sampai hari ulang tahun tiba ❤️
@@ -141,7 +141,7 @@ const GiftWrapper = () => {
       {!countdownFinished && (
         <div className="mt-8 p-4 bg-white bg-opacity-80 rounded-lg shadow-md max-w-md text-center">
           <p className="text-pink-600">Hadiah ini terkunci sampai:</p>
-          <p className="text-xl font-bold text-purple-600"> 13 januari 2026 </p>
+          <p className="text-xl font-bold text-purple-600"> 03 Februari 2026 </p>
         </div>
       )}
     </div>

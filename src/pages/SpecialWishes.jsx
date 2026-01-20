@@ -6,29 +6,18 @@ const SpecialWishes = ({ isIOS }) => {
   const [showHeart, setShowHeart] = useState(false);
 
   const wishes = `
-Selamat ulang tahun ndahh.
-Hari ini tetap menjadi hari yang layak dirayakan,
-meski kini aku hanya bisa mengucapkannya
-dari jarak yang bernama kenangan.
-Semoga di usia yang baru,
-kamu selalu diberi kesehatan, ketenangan,
-dan kebahagiaan yang mungkin dulu
-belum sempat kita temukan bersama.
-Semoga langkahmu ringan,
-hatimu damai,
-dan hidupmu dikelilingi orang-orang
-yang benar-benar menjagamu.
-Terima kasih karena pernah menjadi bagian penting
-dalam hidupku.
-Meski kisah kita tidak sampai akhir,
-aku tidak pernah menyesal
-pernah mencintaimu dengan sepenuh hati.
-Hari ini aku tidak meminta apa-apa,
-selain doa sederhana:
-semoga kamu selalu bahagia,
-dengan atau tanpa aku di dalam ceritamu.
-Selamat bertambah usia.
-Semoga semesta selalu berpihak padamu.
+
+Sayangku 💖, hari ini adalah momen yang paling indah karena hari ini papa lahir ke dunia 🎉. Mama ingin berdoa agar papa selalu dalam lindungan Allah 🙏, diberi kesehatan 💪, kekuatan 🛡️, dan kebahagiaan yang tiada akhir 🌈✨.
+
+Mama tahu hidup tidak selalu mudah 🌧️, tapi mama ingin papa tahu bahwa papa tidak sendiri 🤝. Mama akan selalu mendukungmu 💞, menyemangati papa 💫, dan menjadi pundakmu saat papa lelah 😔➡️💆‍♀️.
+
+Semoga setiap langkahmu penuh keberkahan 🕌, dan setiap impianmu satu per satu menjadi kenyataan 🌠. Papa punya hati yang tulus 💓, senyum yang menenangkan 😊, dan jiwa lembut luar dalam 🌹. Dunia butuh lebih banyak orang sepertimu 🌍❤️.
+
+Mama ingin papa tahu bahwa mama percaya padamu sepenuhnya 🙌. Papa kuat 💥, papa hebat 🦋, dan papa pantas mendapatkan yang terbaik 🏆. Jangan pernah ragukan dirimu sendiri 🙅‍♀️, karena papa adalah cahaya dalam hidup banyak orang 🌟, termasuk hidupku 💘.
+
+Jika suatu hari papa merasa ragu atau takut 😟, ingatlah doaku ini: Semoga papa selalu dikelilingi orang-orang baik 👨‍👩‍👧‍👦, rezeki yang cukup 💰, dan cinta yang tulus dari semua arah 💗. Termasuk dariku 🫶.
+
+lopyu papa ❤️, dan akan selalu mencintaimu 💍.
   `;
 
   return (
@@ -97,12 +86,8 @@ Semoga semesta selalu berpihak padamu.
                 transition={{ duration: 2, repeat: Infinity }}
               >
                 <div className="text-[12rem] select-none text-center">❤️</div>
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg">
-                  Endah 💖
-                </div>
-                <div className="text-white text-lg text-center mt-4">
-                  My Heart Belongs to you, Honey🥹
-                </div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold drop-shadow-lg"></div>
+                <div className="text-white text-lg text-center mt-4"></div>
               </motion.div>
             </motion.div>
           )}
