@@ -119,7 +119,7 @@
 
 // export default App
 import { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BirthdayCountdown from "./pages/BirthdayCountdown";
 import SpecialWishes from "./pages/SpecialWishes";
@@ -134,6 +134,7 @@ import BackgroundMusic from "./components/BackgroundMusic";
 function App() {
   const [countdownFinished, setCountdownFinished] = useState(false);
   const [isIOS, setIsIOS] = useState(false);
+  const [isAccessible, setIsAccessible] = useState(false);
 
   useEffect(() => {
     // Check if device is iOS
@@ -141,6 +142,13 @@ function App() {
       /iPad|iPhone|iPod/.test(navigator.userAgent) ||
         (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)
     );
+
+    // Check if pages are accessible (after Feb 3, 2026)
+    const checkAccess = () => {
+      const now = new Date();
+      const accessDate = new Date("2026-02-03T00:00:00");
+      setIsAccessible(now >= accessDate);
+    };
 
     // Check if countdown is finished
     const checkCountdown = () => {
@@ -151,8 +159,12 @@ function App() {
       }
     };
 
+    checkAccess();
     checkCountdown();
-    const timer = setInterval(checkCountdown, 1000);
+    const timer = setInterval(() => {
+      checkAccess();
+      checkCountdown();
+    }, 1000);
     return () => clearInterval(timer);
   }, []);
 
@@ -167,9 +179,13 @@ function App() {
           <Route
             path="/"
             element={
-              <PageTransition>
-                <HomePage isIOS={isIOS} />
-              </PageTransition>
+              isAccessible ? (
+                <PageTransition>
+                  <HomePage isIOS={isIOS} />
+                </PageTransition>
+              ) : (
+                <Navigate to="/countdown" replace />
+              )
             }
           />
           <Route
@@ -183,39 +199,55 @@ function App() {
           <Route
             path="/wishes"
             element={
-              <PageTransition>
-                <SpecialWishes isIOS={isIOS} />
-              </PageTransition>
+              isAccessible ? (
+                <PageTransition>
+                  <SpecialWishes isIOS={isIOS} />
+                </PageTransition>
+              ) : (
+                <Navigate to="/countdown" replace />
+              )
             }
           />
           <Route
             path="/memories"
             element={
-              <PageTransition>
-                <Memories isIOS={isIOS} />
-              </PageTransition>
+              isAccessible ? (
+                <PageTransition>
+                  <Memories isIOS={isIOS} />
+                </PageTransition>
+              ) : (
+                <Navigate to="/countdown" replace />
+              )
             }
           />
           <Route
             path="/gift"
             element={
-              <PageTransition>
-                <GiftWrapper isIOS={isIOS} />
-              </PageTransition>
+              isAccessible ? (
+                <PageTransition>
+                  <GiftWrapper isIOS={isIOS} />
+                </PageTransition>
+              ) : (
+                <Navigate to="/countdown" replace />
+              )
             }
           />
           <Route
             path="/reply"
             element={
-              <PageTransition>
-                <ReplyPage isIOS={isIOS} />
-              </PageTransition>
+              isAccessible ? (
+                <PageTransition>
+                  <ReplyPage isIOS={isIOS} />
+                </PageTransition>
+              ) : (
+                <Navigate to="/countdown" replace />
+              )
             }
           />
           <Route
             path="/celebration"
             element={
-              countdownFinished ? (
+              isAccessible && countdownFinished ? (
                 <PageTransition>
                   <CakeCelebration isIOS={isIOS} />
                 </PageTransition>
@@ -223,6 +255,17 @@ function App() {
                 <PageTransition>
                   <BirthdayCountdown isIOS={isIOS} />
                 </PageTransition>
+              )
+            }
+          />
+          {/* Catch-all route - redirect to countdown if not accessible */}
+          <Route
+            path="*"
+            element={
+              isAccessible ? (
+                <Navigate to="/" replace />
+              ) : (
+                <Navigate to="/countdown" replace />
               )
             }
           />

@@ -110,15 +110,32 @@ const BirthdayCountdown = ({ isIOS }) => {
           <h3 className="text-xl font-semibold text-purple-600 mb-2">
             📅 03 Februari 2026
           </h3>
-          <p className="text-pink-600">
+          <p className="text-pink-600 mb-3">
             Tanggal dimana senyum papa akan menghiasi hari hari mama
           </p>
+          <div className="bg-pink-50 p-3 rounded-lg border border-pink-200">
+            <p className="text-sm text-pink-700">
+              🔒 Halaman lainnya akan terbuka pada tanggal ini
+            </p>
+          </div>
         </div>
 
-        <p className="mt-6 text-lg text-pink-500 italic text-center">
+        <p className="mt-6 text-lg text-pink-500 italic text-center mb-6">
           "today and everyday, i'll always be ur #1 supporter, clap the loudest
           for u, and praying wholeheartedly for ur well-being."
         </p>
+
+        <div className="bg-gradient-to-r from-pink-100 to-purple-100 p-4 rounded-xl border border-pink-200">
+          <div className="text-center">
+            <div className="text-2xl mb-2">🎁</div>
+            <p className="text-pink-700 font-medium">
+              Kejutan spesial menunggumu di hari ulang tahun!
+            </p>
+            <p className="text-sm text-pink-600 mt-1">
+              Semua halaman akan terbuka saat countdown selesai
+            </p>
+          </div>
+        </div>
       </motion.div>
 
       <AnimatePresence>
